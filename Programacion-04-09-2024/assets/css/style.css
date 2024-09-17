@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #1D2951;
+    padding: 1em;
+    color: white;
+}
+
+.main-container {
+    display: flex;
+}
+
+.Container-1 {
+    /* width: 200px; */
+    background-color: #EBEFF5;
+    min-height: 100vh;
+    padding: 1em;
+}
+
+.Principal {
+    flex: 1;
+    padding: 1em;
+}
+
+.galeria {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "a b"
+        "c d";
+    background: white;
+    padding: 10px;
+    margin: 1px;
+}
+
+.imagen1, .imagen2, .imagen3, .imagen4 {
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #d02a1e;
+    color: white;
+}
+
+.tarjeta-producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+.Producto1, .Producto2, .Producto3, .Producto4 {
+    width: 100%;
+    height: auto;
+}
+
+.Texto1, .Texto2, .Texto3, .Texto4 {
+    text-align: center;
+    font-size: 18px;
+}
+
+.Subtexto1, .Subtexto2, .Subtexto3, .Subtexto4 {
+    text-align: center;
+    font-size: 10px;
+}
+
+.Subtexto1-1, .Subtexto2-2, .Subtexto3-3, .Subtexto4-4 {
+    background: #1D2951;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* Telefono */
+
+@media (min-width: 576px) {
+    .galeria {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "a"
+        "b"
+        "c"
+        "d";
+    }
+}
+
+@media (min-width: 768px) {
+    .galeria {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "a b "
+        "c d ";
+    }
+}
+
+/* Tablet */
+
+@media (min-width: 1280px) {
+    .galeria {
+        grid-template-columns: 1fr 1fr ;
+        grid-template-areas:
+        "a b"
+        "c d"
+    }
+}
+
+
+@media (min-width: 800px) {
+    .galeria {
+        grid-template-columns: 1fr 1fr ;
+        grid-template-areas:
+        "a b "
+        "c d"
+    }
+}
+
+/* Iphone 11 375 x 812 px*/
+
+@media (min-width: 375px) {
+    .galeria {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "a"
+        "b"
+        "c"
+        "d"
+    }
+}
+
+@media (min-width: 812px) {
+    .galeria {
+        grid-template-columns: 1fr 1fr ;
+        grid-template-areas:
+        "a b "
+        "c d"
+    }
+}
